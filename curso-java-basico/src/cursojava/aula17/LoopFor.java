@@ -1,7 +1,5 @@
 package cursojava.aula17;
 
-import java.util.Scanner;
-
 public class LoopFor {
 
 	public static void main(String[] args) {
