@@ -12,9 +12,9 @@ public class Teste {
 		Professor professor = new Professor();
 		
 		
-		System.out.println(Constantes.URL_BLOG);
+		//System.out.println(Constantes.URL_BLOG);
 		//Constantes.URL_BLOG = "asfas";
-		System.out.println(Constantes.URL_BLOG);
+		//System.out.println(Constantes.URL_BLOG);
 	}
 
 }
