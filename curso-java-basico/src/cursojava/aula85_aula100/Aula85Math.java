@@ -25,8 +25,6 @@ public class Aula85Math {
 		System.out.println(Math.cos(Math.toRadians(1)));
 		
 		System.out.println(Math.tan(Math.toRadians(45)));
-		
-		
 
 	}
 
