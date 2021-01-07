@@ -29,13 +29,13 @@ public class Aula90Locale {
 		 */
 
 		System.out.println(Locale.getDefault());
-		
+
 		NumberFormat nf = NumberFormat.getCurrencyInstance();
 		System.out.println(nf.format(5000));
-		
+
 		NumberFormat nf1 = NumberFormat.getCurrencyInstance(Locale.US);
 		System.out.println(nf1.format(5000));
-		
+
 		NumberFormat nf2 = NumberFormat.getCurrencyInstance(Locale.ITALIAN);
 		System.out.println(nf2.format(5000));
 
