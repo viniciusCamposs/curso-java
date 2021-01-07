@@ -38,13 +38,12 @@ public class Aula96NumberFormat {
 		porcent.setMaximumIntegerDigits(4);
 		porcent.setMinimumIntegerDigits(3);
 		
-		
 		porcentagem = porcent.format(99.987);
 		System.out.println(porcentagem);
-		
+
 		// ARREDONDAMENTO
 		nf = NumberFormat.getInstance();
-		
+
 		nf.setRoundingMode(RoundingMode.DOWN);
 		nf.setMaximumFractionDigits(0);
 		nf.setMinimumFractionDigits(0);
