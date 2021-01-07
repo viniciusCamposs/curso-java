@@ -16,9 +16,9 @@ public class Aula94DiferencaEntreDatas {
 		 * try { diferencaDataAteJava7(); } catch (ParseException e) {
 		 * e.printStackTrace(); }
 		 */
-		
-		//diferencaDataJava8();
-		//diferencaDataJava8ComTempo();
+
+		// diferencaDataJava8();
+		// diferencaDataJava8ComTempo();
 		diferencaDataJava8ComChronoUnit();
 	}
 
@@ -47,37 +47,38 @@ public class Aula94DiferencaEntreDatas {
 		int dias = periodo.getDays();
 		int meses = periodo.getMonths();
 		int anos = periodo.getYears();
-		
+
 		System.out.println("Dias: " + dias);
 		System.out.println("Meses: " + meses);
 		System.out.println("Anos: " + anos);
 	}
-	
+
 	public static void diferencaDataJava8ComTempo() {
 		LocalDateTime data1 = LocalDateTime.of(2019, 1, 1, 6, 30);
 		LocalDateTime data2 = LocalDateTime.of(2019, 1, 10, 8, 30);
-		
+
 		Duration duracao = Duration.between(data1, data2);
-		
+
 		long diffHours = duracao.toHours();
 		long diffDays = duracao.toDays();
-		
+
 		System.out.println("************************");
 		System.out.println("Diferença entre horas: " + diffHours);
 		System.out.println("Diferença entre dias: " + diffDays);
-		
+
 	}
-	
+
 	public static void diferencaDataJava8ComChronoUnit() {
 		LocalDateTime data1 = LocalDateTime.of(2019, 1, 1, 6, 30);
 		LocalDateTime data2 = LocalDateTime.of(2019, 1, 1, 8, 30);
-		
+
 		long diff = ChronoUnit.HOURS.between(data1, data2);
 		long diffDias = ChronoUnit.DAYS.between(data1, data2);
-		
+
+		System.out.println("************************");
 		System.out.println("Diferença entre horas: " + diff);
 		System.out.println("Diferença entre dias: " + diffDias);
-		
+
 	}
 
 }
