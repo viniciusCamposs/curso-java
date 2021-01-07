@@ -8,7 +8,9 @@ public class Aula95ResourceBundle {
 
 		System.out.println("Locale atual; " + Locale.getDefault());
 		ResourceBundle rb = ResourceBundle.getBundle("meu-texto");
-		
+
 		System.out.println("Olá: " + rb.getString("world"));
+
+		Locale.setDefault(new Locale("pt_BR", "pt_BR"));
 	}
 }
